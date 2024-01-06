@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.bg-slideImg {
+  background-image: url("https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bg-slideImg2 {
+  background-image: url("https://a-v2.sndcdn.com/assets/images/hp_creator_image_featured_artists-798050ae.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.play-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.img-container:hover .play-icon {
+  opacity: 1;
+}
+.slider-thumb-fff::-webkit-slider-thumb {
+  background: red;
+}
